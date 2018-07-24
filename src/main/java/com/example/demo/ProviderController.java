@@ -13,4 +13,9 @@ public class ProviderController {
         return "hello " + name;
     }
 
+    @RequestMapping("/welcome/{name}")
+    public String hello(@PathVariable("name") String name) {
+        return "welcome " + name;
+    }    
+    
 }
